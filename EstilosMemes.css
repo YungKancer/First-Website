@@ -1,0 +1,101 @@
+ /* Poniendo "*", las ordenes de CSS se verán afectadas en todo el codigo HTML para que el trabajo sea mas rapido, eficaz  pulcro*/
+ 
+ /* para CSS tenemos :
+    margin: crea un margen con los pixeles que establecemos sobre los distintios apartados, como nav y otros. 
+    padding: Crea margenes dentro de una seccion, ya sea header o la que establezcamos.
+    Text-align: sirve para centrar todo el HTML en el centro, izquierda o derecha de la pagina.
+    Display:block: sirve para hacer que uno o todas las secciones se hagan en bloque, es decir, no sean lineales. 
+    width: es para definir El tamaño de la seccion.
+    border: Border crea una linea de los pixeles, color y forma alrededor de la seccion definida.
+    Background: Añadir color de fondo.
+    Color: Poner color a las letras.*/
+
+/* En html, añadiendo despues de una etiqueta, la etiqueta class="X" y despues en CSS poner ".X" 
+   haces una clase donde toda etiqueta que lo tenga se verá afectada por las ordenes de css*/
+
+   *{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+   text-align: center;
+}
+body, header, section, article, nav{
+    display:block;
+    text-align: left;
+}
+
+.agrupar {
+    width: 960px;
+    margin: 15px ;
+    border: 2px solid black;
+    background: #ccc;
+}
+
+.header{
+   background: #2d3436;
+   color:white;
+   padding: 20px; 
+   border: 2px solid black;
+}
+
+.header h1{
+   text-align: left;
+}
+
+.menu{
+    background: #ccc; 
+    padding :5px 15px;
+    text-align: left;
+    border: 2px solid black;
+    color:black;
+}
+
+ .menu li{
+    list-style: none;
+     padding: 5px;
+     font: bold 14px verdana;
+     display: inline-block;
+ }
+.Seccion{
+    margin:20px;
+    width: 600px;
+    float:left;
+}
+
+article{
+    background: #b4aeae;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+article footer{
+    text-align: right;
+}
+
+.columna blockquote{
+    border:2px solid black;
+    padding: 35px;
+    margin-bottom: 50px;
+    background: #b4aeae;
+}
+
+.pie{
+    clear:both;
+    padding:20px;
+    background: #2d3436;
+    color: #ffffff;
+    text-align: center;
+    border: 2px solid black;
+}
+
+img{
+    width: 300px;
+    display:block;
+    margin: 20px left;
+}
+a[href*="file:///C:/Users/youne/Sync/Youness/Programacion/Por%20hacer/Primerweb/"]{
+    color:black;
+}
